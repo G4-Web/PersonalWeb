@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6ec7, #a78bfa, #6ec7ff); /* Pink, purple, blue gradient */
+    color: #ffffff; /* White text for contrast */
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  
+  /* Loading Screen */
+  #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff6ec7, #a78bfa, #6ec7ff); /* Matching gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .terminal {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .terminal-header {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker semi-transparent black */
+    padding: 10px;
+    color: #cccccc;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+  }
+  
+  .terminal-body {
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    color: #00ff00; /* Green terminal text */
+    line-height: 1.5;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 80px 20px; /* Adjusted padding for better spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 45px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle white glow */
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Brighter glow on hover */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger heading for emphasis */
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Light gray text for readability */
+  }
+  
+  /* Friends Section */
+  .friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Spacing between items */
+  }
+  
+  .friend {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 45px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .friend:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Glow on hover */
+  }
+  
+  /* Languages Section */
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px; /* Spacing between items */
+  }
+  
+  .language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .language img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .language:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Discord Servers Section */
+  .servers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Spacing between items */
+  }
+  
+  .server {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .server:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Glow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .section-box {
+      padding: 20px;
+    }
+  
+    .friends-grid, .languages-grid, .servers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
